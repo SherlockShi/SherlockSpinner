@@ -41,7 +41,6 @@ dependencies {
     android:hint="Please Select..."/>
 ```
 
-**Attributes**  
 SherlockSpinner有以下属性:  
 `lineColor`: 设置底部横线的颜色
 
@@ -61,7 +60,7 @@ mSherlockSpinner.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 ```
 
 ##### 3. (可选) 如果你想在异步加载数据后，再显示出更新后的数据，你可以使用它的点击事件来处理
-`记住：`在获取数据后，你必须手动调用sherlockSpinner.show()方法来显示SherlockSpinner的下拉选项
+`记住：`在获取数据后，你必须手动调用`sherlockSpinner.show()`方法来显示SherlockSpinner的下拉选项
 
 ```java
 mSherlockSpinner.setOnClickListener(new SherlockSpinner.OnClickListener() {

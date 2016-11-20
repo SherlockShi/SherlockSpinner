@@ -42,7 +42,6 @@ or by Maven:
     android:hint="Please Select..."/>
 ```
 
-**Attributes**  
 SherlockSpinner has one additional attributes:  
 `lineColor`: set the bottom line color  
 > As SherlockSpinner extends EditText, you can use other Attributes of EditText, such as `gravity`...
