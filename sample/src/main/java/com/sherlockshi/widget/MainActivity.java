@@ -37,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
 
     // 5. SherlockSpinner Pro(In Code)
     private SherlockSpinner mSherlockSpinnerProInCode;
+    ArrayAdapter<String> mAdapterSherlockSpinnerProInCode;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -62,8 +63,8 @@ public class MainActivity extends AppCompatActivity {
     // 5. SherlockSpinner Pro(In Code)
     private void initSherlockSpinnerProInCode() {
         mSherlockSpinnerProInCode = (SherlockSpinner) findViewById(R.id.sherlock_spinner_pro_in_code);
-        ArrayAdapter<String> mAdapterSherlockSpinner = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, mLanguages);
-        mSherlockSpinnerProInCode.setAdapter(mAdapterSherlockSpinner);
+        mAdapterSherlockSpinnerProInCode = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, mLanguages);
+        mSherlockSpinnerProInCode.setAdapter(mAdapterSherlockSpinnerProInCode);
         mSherlockSpinnerProInCode.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -173,8 +174,6 @@ public class MainActivity extends AppCompatActivity {
                         showMessage("Touch Spinner");
                         break;
                 }
-
-
                 return false;
             }
         });
@@ -204,7 +203,7 @@ public class MainActivity extends AppCompatActivity {
                     mAdapterLanguages.notifyDataSetChanged();
                 } else if (USE_SHERLOCK_SPINNER == which) {
                     mLanguages[4] = "Javaaaaaaaaaaa";
-                    mAdapterLanguages.notifyDataSetChanged();
+                    mAdapterSherlockSpinnerProInCode.notifyDataSetChanged();
                 }
 
                 runOnUiThread(new Runnable() {

@@ -49,8 +49,8 @@ SherlockSpinner有以下属性:
 ##### 2. 还是像使用系统Spinner一样，在代码中设置`Adapter`和`ItemClickListener`:
 ```java
 mSherlockSpinner = (SherlockSpinner) findViewById(R.id.sherlock_spinner);
-ArrayAdapter<String> mAdapterSherlockSpinner = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, mLanguages);
-mSherlockSpinner.setAdapter(mAdapterSherlockSpinner);
+ArrayAdapter<String> mAdapterLanguages = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, mLanguages);
+mSherlockSpinner.setAdapter(mAdapterLanguages);
 mSherlockSpinner.setOnItemClickListener(new AdapterView.OnItemClickListener() {
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
