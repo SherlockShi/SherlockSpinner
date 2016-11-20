@@ -1,0 +1,27 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:dropDownListViewStyle">@style/mySpinnerStyle</item>
+    </style>
+
+    <style name="mySpinnerStyle" parent="android:Widget.ListView.DropDown">
+        <item name="android:divider">#E0E0E0</item>
+        <item name="android:dividerHeight">0.1dp</item>
+    </style>
+
+    <style name="BlueLine">
+        <item name="colorControlNormal">@color/colorPrimary</item>
+    </style>
+
+    <style name="DropDownEditTextStyle">
+        <item name="android:textSize">16sp</item>
+        <item name="android:drawableRight">@drawable/ic_dropdown</item>
+        <item name="android:editable">false</item>
+        <item name="android:gravity">right</item>
+    </style>
+</resources>
