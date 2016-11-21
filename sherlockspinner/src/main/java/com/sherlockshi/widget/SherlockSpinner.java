@@ -9,23 +9,22 @@ import android.support.annotation.ColorRes;
 import android.support.annotation.DrawableRes;
 import android.support.v4.content.ContextCompat;
 import android.support.v4.view.ViewCompat;
+import android.support.v7.widget.AppCompatEditText;
 import android.support.v7.widget.ListPopupWindow;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.EditText;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 
-import com.sherlockshi.widget.sherlockspinner.R;
 
 /**
  * Author: SherlockShi
  * Date:   2016-11-19 20:34
  * Description:
  */
-public class SherlockSpinner extends EditText {
+public class SherlockSpinner extends AppCompatEditText {
 
     private static final int DEF_LINE_COLOR = 0XFF3F51B5;
 
@@ -167,8 +166,6 @@ public class SherlockSpinner extends EditText {
      * clickable, it becomes clickable.
      *
      * @param l The callback that will run
-     *
-     * @see #setClickable(boolean)
      */
     public void setOnClickListener(OnClickListener l) {
         if (!isClickable()) {
