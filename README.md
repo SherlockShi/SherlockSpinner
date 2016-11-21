@@ -96,6 +96,19 @@ public void getDataFromNet() {
 }
 ```
 
+##### 4. (Optional) more attributes
+- As SherlockSpinner extends EditText, you can use other Attributes of EditText, such as `gravity`、`textSize`、`textColor`...
+- SherlockSpinner has one more attribute，you can set It's position, ie anchorView：
+
+```java
+mSherlockSpinner.setAnchorView(findViewById(R.id.llyt_anchor));
+```
+
+the difference is between Part3 and Part4 in the Gif picture: 
+
+- in Part3, dropdown list anchor in Spinner
+- in Part4, dropdown list anchor in whole line
+
 # ProGuard
 ```groovy
 -keep class com.sherlockshi.widget.** { *; }

@@ -117,12 +117,12 @@ public class MainActivity extends AppCompatActivity {
     // 2. CustomSpinner = EditText + ListPopupWindow
     private void initEditTextPlusListPopupWindow() {
         etLanguages = (EditText) findViewById(R.id.et_languages);
-        etLanguages.setKeyListener(null);
+        etLanguages.setKeyListener(null);   // 设置EditText不可编辑，等同于在xml中设置editable="false"
         lpwLanguages = new ListPopupWindow(this);
         mAdapterLanguages = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, mLanguages);
         lpwLanguages.setAdapter(mAdapterLanguages);
-        lpwLanguages.setAnchorView(etLanguages);
-        lpwLanguages.setModal(true);
+        lpwLanguages.setAnchorView(etLanguages);    //设置ListPopupWindow的锚点，即关联PopupWindow的显示位置
+        lpwLanguages.setModal(true);    // 是否为模态，当设置为true时，会处理返回按键的事件
 
         lpwLanguages.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -130,7 +130,6 @@ public class MainActivity extends AppCompatActivity {
                 showMessage("Select " + mLanguages[position]);
 
                 etLanguages.setText(mLanguages[position]);
-
                 lpwLanguages.dismiss();
             }
         });

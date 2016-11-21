@@ -41,14 +41,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
-                android:visibility="gone"
                 android:text="2. CustomSpinner = EditText + ListPopupWindow"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_vertical"
-                android:visibility="gone"
                 android:orientation="horizontal">
 
                 <TextView
@@ -69,7 +67,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
-                android:text="2. use SherlockSpinner just like System Spinner"/>
+                android:text="3. use SherlockSpinner just like System Spinner"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -93,7 +91,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
-                android:text="3. SherlockSpinner Pro (In XML)"/>
+                android:text="4. SherlockSpinner Pro (In XML)"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -119,7 +117,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
-                android:text="4. SherlockSpinner Pro (In Code)"/>
+                android:text="5. SherlockSpinner Pro (In Code)"/>
 
             <LinearLayout
                 android:id="@+id/llyt_anchor"

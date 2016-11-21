@@ -96,6 +96,16 @@ public void getDataFromNet() {
 }
 ```
 
+##### 4. (可选) 更多属性
+- 由于SherlockSpinner继承自EditText，所以你可以使用EditText的其它属性，例如`gravity`、`textSize`、`textColor`...
+- SherlockSpinner还有一个属性，可以设置下拉框的显示位置，即锚点设置：
+
+```java
+mSherlockSpinner.setAnchorView(findViewById(R.id.llyt_anchor));
+```
+
+效果如图中3和4的区别，在第3部分中，下拉框停靠在Spinner上；而第4部分中，下拉框停靠在Spinner所在的整行布局上，宽度更大。
+
 # ProGuard
 ```groovy
 -keep class com.sherlockshi.widget.** { *; }
