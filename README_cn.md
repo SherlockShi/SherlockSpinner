@@ -7,6 +7,8 @@
 [English](./README.md)  
 中文
 
+> 详细介绍请点击博文: [Android自定义组合控件：SherlockSpinner](http://sherlockshi.github.io/2016/11/21/15_Android/1540_Widget/%E8%87%AA%E5%AE%9A%E4%B9%89%E7%BB%84%E5%90%88%E6%8E%A7%E4%BB%B6SherlockSpinner/)
+
 # 截图
 ![SherlockSpinner](http://7xlpfl.com1.z0.glb.clouddn.com/sherlockshi/2016-11-20-demo3.gif)
 

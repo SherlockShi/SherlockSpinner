@@ -7,6 +7,8 @@ A spinner which you can use just like system spinner, furthermore, you can refre
 English  
 [中文](./README_cn.md)
 
+> For more detail, please click [Android自定义组合控件：SherlockSpinner](http://sherlockshi.github.io/2016/11/21/15_Android/1540_Widget/%E8%87%AA%E5%AE%9A%E4%B9%89%E7%BB%84%E5%90%88%E6%8E%A7%E4%BB%B6SherlockSpinner/)
+
 # Screenshot
 ![SherlockSpinner](http://7xlpfl.com1.z0.glb.clouddn.com/sherlockshi/2016-11-20-demo3.gif)
 
